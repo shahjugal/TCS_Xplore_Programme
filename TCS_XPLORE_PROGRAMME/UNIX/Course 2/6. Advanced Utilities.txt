@@ -1,0 +1,3 @@
+Start from chapter 4 of this course opened in chrome.
+
+https://www.linkedin.com/learning/learning-linux-command-line-2018/the-unix-philosophy

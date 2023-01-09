@@ -1,0 +1,7 @@
+Shows the files and folder.
+
+ls                          ## will show files and folders in current dir.
+ls \usr\bin                 ## will show files and folders in specified dir.
+ls -l                       ## show files and folder with more details.
+
+some importa

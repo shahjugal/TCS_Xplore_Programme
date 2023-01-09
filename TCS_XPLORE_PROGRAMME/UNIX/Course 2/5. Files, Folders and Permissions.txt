@@ -1,0 +1,141 @@
+cd will change the current working directory.
+pwd will show current working directory.
+mkdir will make a new directory.
+
+if the folder has space in it's name.
+we should enclose it in quotes. or use \ bettween two words.
+
+eg cd My\ Documents
+
+
+-R arguement means recursion.
+
+ls -R will shows foldes inside of folder's data too.
+
+mkdir -p will allow making folder to folder path means,
+    $> mkdir Jugal/Downlods/Images
+
+// here the mdkir will create Jugal folder inside of it Downloads folder inside of it Images folder.
+
+rmdir can be used to remove the empty directories.
+
+cp can be used for copying file from a location to another location.
+
+    $> cp image1.jpeg image2.jpeg
+
+// This command will make copy of image1.jpeg with name image2.jpeg.
+
+    $> cp loc1/image1.jpeg loc2/image2.jpeg
+
+// This command will copy image1.jpeg from one place and place it to provided path with respective name.
+
+mv can be used to rename as well as move files from one file to another location.
+
+    $> mv file1.xml file2.xml
+
+// File renamed
+
+    $> mv file1.xml Documents/
+
+// Filed moved to another location.
+
+
+--- WILDCARDS ----
+
+    $> mv *.sh usr/scirpts
+
+// Moves all files in current folder with name ending with .sh extension.
+
+    $> mv * usr/files
+
+// Moves all file to specified path.
+
+    $> rm image?.txt
+
+// This will delete all files that has image followed by any 1 character followed by .txt.
+// it can delete image1.txt image2.txt imagea.txt image_.txt etc all those exist in current dir at same time.
+
+
+// Delete everyt file.
+
+rm -r usr/bin/
+
+// This will delete every file in usr/bin/ path.
+
+
+find command files and list down every file and folder with matching provided attributes.
+it also search inside sub-directories.
+
+find . -name "do*"
+
+this will list down every folder and file starting with do.
+
+like Downloads doList.txt don2_full_movie_Bluray_1080p.mkv
+
+
+sudo will ask for password and change access to superuser level.
+
+sudo -s will allow for longer session to work as superuser without needing passwords frequently.
+
+sudo -k means give up the superuser access and get back to normal access levels.
+
+------ FILE PERMISSIONS -----------------------------------
+
+chmod helps to change the PERMISSIONS of any file.
+
++ means add PERMISSIONS
+- means remove PERMISSIONS
+= means add PERMISSIONS but remove PERMISSIONS for other users.
+
+u means user, g means group, o means others, a means all.
+
+r   READ
+w   WRITE
+x   EXECUTE
+
+for eg 
+    $> chmod +x ./scirpt.sh
+
+// This command will allow the EXECUTE PERMISSIONS to current user.
+
+    $> chmod a+x ./scirpt.sh
+
+// This command will allow the EXECUTE PERMISSIONS to all users.
+
+    $> chmod u+rx ./scirpt.sh
+
+// This command will allow the EXECUTE and READ PERMISSIONS to current users.
+
+cat command shows content of file.
+
+touch command creates a file with name provided.
+
+chown command changes the ownership of specified file to specified user.
+
+sudo chown root image2.txt
+
+------ HARD AND SYMBOLIC LINKS------------------
+
+Links are files that are references to other files.
+Links are used to reduce the file copies in system.
+We can store main file at a location and than link at required location.
+
+Soft Link:  pts to file on disk. (relative path)
+
+Hard Link:  pts to data on disk. (inode)
+
+
+ln command makes the link.
+
+ln -s image1.png image2.png
+
+we made a link of image1.png with name image2.png
+
+-s means make soft link or relative path based link.
+
+without -s we will make hard link.
+
+ln don2.mkv don2_movie.mkv
+
+here we made don2.mkv's hard link don2_movie.mkv if we change location of don2.mkv,
+it wil still work. in case of soft link it wont.

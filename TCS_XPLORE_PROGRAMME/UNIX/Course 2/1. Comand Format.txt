@@ -1,0 +1,7 @@
+Every Command is formatted as follow:
+
+ls      -l      /usr/bin
+command options arguements
+
+Depending on command, options and arguements maybe optional.
+Depending on command, options themselves may also require arguements.

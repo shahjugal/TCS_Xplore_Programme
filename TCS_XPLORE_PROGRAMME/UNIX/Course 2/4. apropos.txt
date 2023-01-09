@@ -1,0 +1,3 @@
+apropos is another command can be used to find commands by providing keyword.
+
+keyword which can also be related to it's function.

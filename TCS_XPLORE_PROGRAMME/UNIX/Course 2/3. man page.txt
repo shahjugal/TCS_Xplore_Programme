@@ -1,0 +1,5 @@
+man command shows manual page.
+
+eg.
+
+man ls
